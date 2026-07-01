@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Server Unavailable</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0e0e12;
+    color: #e8e8f0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    text-align: center;
+    max-width: 400px;
+    padding: 48px 40px;
+    background: #16161d;
+    border: 1px solid #2a2a38;
+    border-radius: 16px;
+  }
+  .icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #e8e8f0;
+  }
+  p {
+    font-size: 14px;
+    color: #6b6b80;
+    line-height: 1.6;
+    margin-bottom: 28px;
+  }
+  .retry {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: #1e1e28;
+    border: 1px solid #2a2a38;
+    border-radius: 8px;
+    color: #e8e8f0;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: border-color 0.15s;
+  }
+  .retry:hover { border-color: #6c6fff; }
+  .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: #f87171;
+    display: inline-block;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="icon">📺</div>
+  <h1>Server Unavailable</h1>
+  <p>The signage server is currently offline or unreachable. It may be starting up, undergoing maintenance, or temporarily shut down.</p>
+  <a class="retry" href="javascript:location.reload()">
+    <span class="dot"></span>
+    Try again
+  </a>
+</div>
+</body>
+</html>
